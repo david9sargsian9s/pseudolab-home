@@ -1,0 +1,9 @@
+.CommunityAboutOf {
+    height: 45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    max-width: 50rem;
+}

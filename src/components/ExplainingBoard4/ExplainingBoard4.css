@@ -1,0 +1,7 @@
+.ExplainingBoard4 {
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

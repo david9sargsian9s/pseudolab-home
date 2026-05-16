@@ -1,0 +1,14 @@
+.ExplainingBoard2 {
+    height: 15rem;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 12px;
+}
+
+.ExplainingBoard1 .platformExplain1 .platformExplain2 {
+    max-width: 55rem;
+    margin: 12px;
+}

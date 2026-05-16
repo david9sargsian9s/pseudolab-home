@@ -1,0 +1,60 @@
+.Lab {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e5e7eb;
+  font-size: 16px;
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+  margin: 12px;
+  border-radius: 12px;
+  height: 82vh;
+  overflow: hidden;
+}
+
+.LabSettings #profile {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    margin: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--color);
+    transition: 0.95s;
+    background: var(--theme-color);
+    box-shadow: 0 0 4px inset var(--theme-shadow);
+    backdrop-filter: blur(5px);
+}
+
+.LabSettings .userInfo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#greetings {
+    color: var(--color);
+}
+
+.DropPlace {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DropPlace .PlaceOrBtn {
+    transition: 0.55s;
+    cursor: pointer;
+}
+
+.DropPlace .PlaceOrBtn:hover {
+    color: #2768ff;
+}
+
+/* @media screen and (max-width: 441px) {
+    
+} */

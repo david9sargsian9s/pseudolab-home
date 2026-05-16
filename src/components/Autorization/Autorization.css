@@ -1,0 +1,74 @@
+.auth-overlay2 {
+  position: fixed;
+  inset: 0;
+  top: -5px;
+  z-index: 9999;
+  height: 45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 95vw;
+  margin:5px auto;
+  border-radius: 20px;
+  background: var(--theme-color);
+  box-shadow: 0 0 4px inset var(--theme-shadow);
+  transition: 1.5s;
+  backdrop-filter: blur(1px);
+}
+
+.auth-modal2 {
+  background: #373737;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  border-radius: 16px;
+  min-width: 320px;
+}
+
+#ToAdaptiveBtn2 {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    margin: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: var(--color);
+}
+
+/* .Autorization {
+    display: none;
+} */
+
+.PortalLinks2 {
+    width: 45px;
+    padding: 12px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    margin: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color);
+    transition: 0.95s;
+}
+
+.PortalLinks2:hover {
+    background: var(--theme-color);
+    box-shadow: 0 0 4px inset var(--theme-shadow);
+    backdrop-filter: blur(5px);
+}
+
+/* @media screen and (max-width: 915px) {
+    .Autorization {
+        display: flex;
+    }
+} */

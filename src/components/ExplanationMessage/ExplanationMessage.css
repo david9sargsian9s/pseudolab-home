@@ -1,0 +1,37 @@
+.ExplanationMessage {
+    background: var(--Background-Gradient);
+    color: var(--color);
+    padding: 12px;
+    margin: 12px;
+    width: 17rem;
+    height: 10rem;
+    border-radius: 12px;
+    box-shadow: 0 0 4px inset var(--theme-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    animation: messageAppear 0.6s ease forwards;
+}
+
+@keyframes messageAppear {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.ExplanationMessage span {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: textAppear 0.6s ease forwards;
+    animation-delay: 0.4s;
+}
+
+@keyframes textAppear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

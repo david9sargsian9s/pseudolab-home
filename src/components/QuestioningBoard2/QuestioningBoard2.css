@@ -1,0 +1,19 @@
+.QuestioningBoard2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.QuestioningBoard2 li {
+    font-size: 24px;
+}
+
+.infoBox2 {
+    margin-top: 3rem;
+}
+
+.WTFQimg2 {
+    display: flex;
+    align-items: center;
+}

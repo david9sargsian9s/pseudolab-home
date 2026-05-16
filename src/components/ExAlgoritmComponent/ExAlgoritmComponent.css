@@ -1,0 +1,12 @@
+.ExAlgoritmComponent {
+    max-width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 22px;
+}
+
+.ExAlgoritmComponent span {
+    font-size: 24px;
+}

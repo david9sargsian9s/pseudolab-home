@@ -1,0 +1,389 @@
+@font-face {
+    font-family: 'PseudoLab.com';
+    src: url(../../../public/Fonts/PseudoLab-Regular-Fonts/Exo_2/Exo2-VariableFont_wght.ttf);
+    font-weight: 700;
+}
+
+:root[data-theme="light"] {
+    --theme-color: rgba(255, 196, 196, 0.296);
+    --theme-shadow: rgba(255, 255, 255, 0.595);
+    --search-shadow: 0 0 3px inset rgba(0, 0, 0, 0.626);
+    --background-color: rgba(192, 178, 178, 0.911);
+    --Background-Gradient: linear-gradient(180deg, rgb(160, 160, 200) 0%, rgb(82, 82, 141) 100%);
+    --SignIn-btn-color: rgba(255, 255, 255, 0.491);
+    --registration-btn-color: rgba(167, 148, 148, 0.911); 
+    --new-session: rgba(63, 61, 61, 0.514);
+    --info-piece-color: rgba(246, 173, 5, 0.305);
+    --warnings: rgba(246, 93, 5, 0.474);
+    --color: black;
+}
+
+:root[data-theme="dark"] {
+    --theme-color: rgba(84, 84, 255, 0.15);
+    --theme-shadow: rgba(255, 255, 255, 0.492);
+    --search-shadow: 0 0 3px inset black;
+    --background-color: rgba(17, 5, 31, 0.826);
+    --Background-Gradient: linear-gradient(180deg, rgba(0, 0, 120, 1) 0%, rgba(0, 0, 33, 1) 100%);
+    --SignIn-btn-color: rgba(255, 255, 255, 0.492);
+    --registration-btn-color: rgba(17, 5, 31, 0.826);
+    --new-session: rgba(128, 128, 128, 0.436);
+    --info-piece-color: rgba(246, 174, 5, 0.474);
+    --warnings: rgba(246, 93, 5, 0.474);
+    --color: white;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PseudoLab.com';
+    background: var(--Background-Gradient) no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+nav {
+    position: sticky;
+    top: 5px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 95vw;
+    margin:5px auto;
+    // padding-right: 25.5rem;
+    border-radius: 20px;
+    background: var(--theme-color);
+    box-shadow: 0 0 4px inset var(--theme-shadow);
+    transition: 1.5s;
+    backdrop-filter: blur(5px);
+    #MainLogo {
+        margin: 5px;
+    }
+    .themeBtn {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        border: none;
+        margin: 12px;
+        border-radius: 50%;
+        cursor: pointer;
+        color: var(--color);
+        transition: 0.95s;
+        background: var(--theme-color);
+        box-shadow: 0 0 4px inset var(--theme-shadow);
+        backdrop-filter: blur(5px);
+    }
+    .logo-holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color);
+    }
+    a {
+        text-decoration: none;
+    }
+    #SearchingPlace {
+        border-radius: 20px;
+        padding: 5px;
+        text-align: center;
+        background: var(--theme-color);
+        box-shadow: 0 0 4px inset var(--theme-shadow);
+        backdrop-filter: blur(5px);
+        color: var(--color);
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .commLinks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Links {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        border: none;
+        margin: 12px;
+        border-radius: 50%;
+        cursor: pointer;
+        color: var(--color);
+        transition: 0.95s;
+    }
+    .Links:hover {
+        background: var(--theme-color);
+        box-shadow: 0 0 4px inset var(--theme-shadow);
+        backdrop-filter: blur(5px);
+    }
+    .portals {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .PortalLinks {
+        width: 45px;
+        padding: 12px 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        border: none;
+        margin: 12px;
+        border-radius: 30px;
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--color);
+        transition: 0.95s;
+    }
+    .PortalLinks:hover {
+        background: var(--theme-color);
+        box-shadow: 0 0 4px inset var(--theme-shadow);
+        backdrop-filter: blur(5px);
+    }
+    .themeqbars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.main-information {
+        color: var(--color);
+        text-align: center;
+        .main-info-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 95vw;
+        margin:5px auto;
+        border-radius: 20px;
+        background: var(--theme-color);
+        box-shadow: 0 0 4px inset var(--theme-shadow);
+        transition: 1.5s;
+        backdrop-filter: blur(5px);
+        padding: 7px;
+        color: var(--color);
+        .logo-Q-main-info-holder {
+            position: relative;
+            display: inline-block;
+            .BackgroundFirstElement {
+                border: 4px solid rgb(212, 212, 212);
+                border-radius: 20px;
+            }
+            .img-text {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                font-size: 20px;
+                font-weight: 600;
+                color: rgb(255, 255, 255);
+                pointer-events: none;
+                top: 27vh;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .slogans-holder {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    .Info-from-locales {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 95vw;
+        margin:5px auto;
+        border-radius: 20px;
+        background: var(--theme-color);
+        box-shadow: 0 0 4px inset var(--theme-shadow);
+        transition: 1.5s;
+        backdrop-filter: blur(5px);
+        padding: 7px;
+        color: var(--color);
+        .flags {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 12px;
+            margin: auto;
+            font-size: 35px;
+        }
+    }
+}
+
+
+.Main-to-start-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color);
+    .Start {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        color: var(--color);
+        background: none;
+        border: none;
+        width: 120px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: var(--SignIn-btn-color);
+        transition: 1.5s;
+    }
+    .Start:hover {
+        transform: scale(0.95);
+        background-color: rgba(255, 255, 255, 0.658);
+    }
+}
+
+.about-the-project {
+    margin: 70px;
+    color: var(--color);
+    .How-Does-It-Work {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin:5vw auto;
+        border-radius: 20px;
+        background: var(--theme-color);
+        box-shadow: 0 0 4px inset var(--theme-shadow);
+        transition: 1.5s;
+        backdrop-filter: blur(5px);
+        color: var(--color);
+    }
+    .features {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin:5vw auto;
+        border-radius: 20px;
+        background: var(--theme-color);
+        box-shadow: 0 0 4px inset var(--theme-shadow);
+        transition: 1.5s;
+        backdrop-filter: blur(5px);
+        color: var(--color);
+    }
+}
+
+.Last-Slogan {
+    text-align: center;
+}
+
+.who {
+    .Who-is-PseudoLab-for {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin:5vw auto;
+        border-radius: 20px;
+        background: var(--theme-color);
+        box-shadow: 0 0 4px inset var(--theme-shadow);
+        transition: 1.5s;
+        backdrop-filter: blur(5px);
+        color: var(--color);
+        text-align: center;
+    }
+}
+
+.footerConfiguratuions{
+    width: 26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    footer {
+        height: 250px;
+        background: var(--background-color);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        color: var(--color);
+        .footerItems {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            color: var(--color);
+        }
+        .footerLinks {
+            text-decoration: none;
+            color: var(--color);
+        }
+    }
+}
+
+
+
+.auth-error {
+  background: #2a1013;
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 0.78rem;
+  color: #ffb3b3;
+  border: 1px solid rgba(255,92,92,0.5);
+  margin-bottom: 10px;
+}
+
+// @media screen and (max-width: 1440px) {
+//     .AutorisationHolder {
+//         display: none !important;
+//     }
+// }
+
+@media screen and (max-width: 1015px) {
+    .commLinks {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .portals {
+        display: none !important;
+    }
+}
+
+@media (orientation: landscape) {
+  .footerConfiguratuions{
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 440px) {
+  nav {
+    margin-left: 0.8rem;
+    padding-right: 24.3rem;
+    .themeBtn {
+        margin: 0;
+    }
+  }
+}

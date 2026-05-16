@@ -1,0 +1,32 @@
+.Community {
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10rem;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+.community-quotation-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#CRConf {
+    color: rgba(255, 255, 0, 0.484);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 440px) {
+    .community-buttons-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

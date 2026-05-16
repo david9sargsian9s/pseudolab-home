@@ -1,0 +1,7 @@
+.ExplainingBoard3 {
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 12px;
+}

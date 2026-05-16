@@ -1,0 +1,20 @@
+.privacy-container {
+    color: var(--color);
+    width: 100%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+
+.privacy-list {
+    text-align: left;
+    width: 100%;
+    padding-left: 20px; 
+
+}
+
+.privacy-section {
+    width: 100%;
+}

@@ -1,0 +1,29 @@
+.Home {
+    color: var(--color);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20rem;
+}
+
+.Home .MainCodeExample {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width : 750px) {
+    .Home {
+        margin: 12px;
+    }
+    .adaptiveBlock {
+        height: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,18 @@
+.BillBoard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.BillBoard .infoBoard {
+    max-width: 25rem;
+    margin: 12px;
+}
+
+.BillBoard .codeboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

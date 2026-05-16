@@ -1,0 +1,48 @@
+.LearnWorkKonfig1,
+.LearnWorkKonfig2 {
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    scrollbar-width: none;
+
+    -ms-overflow-style: none;
+}
+
+.LearnWorkKonfig1::-webkit-scrollbar,
+.LearnWorkKonfig2::-webkit-scrollbar {
+    display: none;
+}
+
+#logicTxt {
+    font-size: large;
+    text-decoration: underline;
+}
+
+.LearnWorkKonfig2 {
+    width: 95%;
+}
+
+#IntensiveTraining {
+    position: sticky;
+    top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    max-width: 15rem;
+    margin:5px auto;
+    border-radius: 20px;
+    background: var(--theme-color);
+    box-shadow: 0 0 4px inset var(--theme-shadow);
+    color: var(--color);
+    text-decoration: none;
+    transition: 1.5s;
+    backdrop-filter: blur(5px);
+}
+
+.insimpleconfig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

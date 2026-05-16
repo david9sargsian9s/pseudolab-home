@@ -1,0 +1,14 @@
+.ExplainingBoard1 {
+    height: 15rem;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
+
+.ExplainingBoard1 .explainingtexts {
+    max-width: 55rem;
+    margin: 12px;
+}
+
