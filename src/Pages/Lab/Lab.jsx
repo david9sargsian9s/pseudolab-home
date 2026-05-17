@@ -14,7 +14,7 @@ export const Lab = () => {
   const navigate = useNavigate();
 
   const updateUser = async (updatedData) => {
-  const response = await fetch(`http://localhost:3009/User_Data/${currentUser.id}`, {
+  const response = await fetch(`${process.env.REACT_APP_API_URL}/User_Data/${currentUser.id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json"
@@ -28,7 +28,7 @@ export const Lab = () => {
 };
 
 const deleteUser = async () => {
-  await fetch(`http://localhost:3009/User_Data/${currentUser.id}`, {
+  await fetch(`${process.env.REACT_APP_API_URL}/User_Data/${currentUser.id}`, {
     method: "DELETE",
   });
 
@@ -49,7 +49,7 @@ const deleteUser = async () => {
 
       try {
         const response = await fetch(
-          `http://localhost:3009/User_Data?auth=${savedAuth}`
+          `${process.env.REACT_APP_API_URL}/User_Data?auth=${savedAuth}`
         );
 
         const data = await response.json();

@@ -15,7 +15,7 @@ export const Register = () => {
 
     const newUser = CreateNewUser(e.target);
 
-    const verification = await fetch("http://localhost:3009/User_Data");
+    const verification = await fetch(`${process.env.REACT_APP_API_URL}/User_Data`);
     const users = await verification.json();
 
     const exists = users.some(u => u.mail === newUser.mail);
@@ -25,7 +25,7 @@ export const Register = () => {
       return;
     }
 
-    const response = await fetch("http://localhost:3009/User_Data", {
+    const response = await fetch(`${process.env.REACT_APP_API_URL}/User_Data`, {
       method:"POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newUser)

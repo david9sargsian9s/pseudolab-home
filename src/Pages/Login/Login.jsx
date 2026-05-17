@@ -14,7 +14,7 @@ export const Login = () => {
       const mail = formData.get("mail");
       const password = formData.get("password");
 
-      const response = await fetch("http://localhost:3009/User_Data");
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/User_Data`);
       const users = await response.json();
 
       const user = users.find(
