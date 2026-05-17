@@ -50,9 +50,11 @@ The changelog is available in the `CHANGELOG.md` file.
 
 ## 🚀 Deploy
 
-A public version of the project will be added in the future.
+A public version of the project [Live Demo](https://pseudolab.netlify.app/)
 
-A link to the demo version will be added after deployment.
+## project features
+
+⚠️ Note: The backend is hosted on a free Render tier. It may take 30-50 seconds to wake up during the initial page load.
 
 ---
 
