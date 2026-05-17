@@ -1,17 +1,13 @@
 {
-  "name": "server",
+  "name": "portfolio-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mock API for portfolio",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "json": "^11.0.0",
-    "server": "^1.0.42"
+    "json-server": "^0.17.4"
   }
 }
