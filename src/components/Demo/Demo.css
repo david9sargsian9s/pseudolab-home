@@ -1,0 +1,151 @@
+.demo-mode {
+    position: sticky;
+    top: 70px;
+    z-index: 99;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 95vw;
+    max-width: 1440px;
+
+    margin: 8px auto;
+    padding: 12px 18px;
+
+    border-radius: 18px;
+
+    background: var(--info-piece-color);
+    backdrop-filter: blur(8px);
+
+    box-shadow: 0 0 4px inset var(--theme-shadow);
+
+    color: var(--color);
+
+    font-weight: 700;
+    letter-spacing: 0.08em;
+
+    transition: 0.3s ease;
+}
+
+.demo-title {
+    user-select: none;
+}
+
+.demo-info-wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+
+    color: var(--color);
+
+    transition: transform 0.3s ease;
+}
+
+.demo-info-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.demo-info-wrapper:hover .demo-popover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.demo-popover {
+    position: absolute;
+
+    top: 40px;
+    left: 50%;
+
+    transform: translateX(-50%) translateY(8px);
+
+    width: 320px;
+
+    padding: 18px;
+
+    border-radius: 18px;
+
+    background: var(--background-color);
+
+    backdrop-filter: blur(14px);
+
+    box-shadow:
+        0 0 10px rgba(0, 0, 0, 0.25),
+        inset 0 0 4px var(--theme-shadow);
+
+    color: var(--color);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.25s ease;
+
+    z-index: 500;
+}
+
+.demo-popover::before {
+    content: "";
+
+    position: absolute;
+
+    top: -8px;
+    left: 50%;
+
+    transform: translateX(-50%) rotate(45deg);
+
+    width: 16px;
+    height: 16px;
+
+    background: var(--background-color);
+}
+
+.demo-popover h4 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.demo-popover p {
+    margin: 0 0 12px;
+    line-height: 1.5;
+    font-size: 0.92rem;
+}
+
+.demo-popover ul {
+    margin: 0;
+    padding-left: 18px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    font-size: 0.88rem;
+}
+
+.demo-popover li {
+    line-height: 1.45;
+}
+
+@media screen and (max-width: 700px) {
+    .demo-popover {
+        width: 260px;
+
+        left: auto;
+        right: -10px;
+
+        transform: translateY(8px);
+    }
+
+    .demo-info-wrapper:hover .demo-popover {
+        transform: translateY(0);
+    }
+
+    .demo-mode {
+        font-size: 0.9rem;
+        padding: 10px 14px;
+    }
+}
