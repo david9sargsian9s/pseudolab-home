@@ -1,151 +1,158 @@
-.demo-mode {
+.demo-mode{
+    width: 20vw;
+    z-index: 10000;
     position: sticky;
-    top: 70px;
-    z-index: 99;
+    top: 90px;
+    margin:10px 20px 10px auto;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    padding:10px 18px;
 
-    width: 95vw;
-    max-width: 1440px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
 
-    margin: 8px auto;
-    padding: 12px 18px;
+    border-radius:20px;
 
-    border-radius: 18px;
+    background:var(--info-piece-color);
 
-    background: var(--info-piece-color);
-    backdrop-filter: blur(8px);
+    backdrop-filter:blur(5px);
 
-    box-shadow: 0 0 4px inset var(--theme-shadow);
+    box-shadow:0 0 4px inset var(--theme-shadow);
 
-    color: var(--color);
+    color:var(--color);
 
-    font-weight: 700;
-    letter-spacing: 0.08em;
-
-    transition: 0.3s ease;
+    font-size:15px;
+    font-weight:700;
 }
 
-.demo-title {
-    user-select: none;
+.demo-title{
+    letter-spacing:.08em;
 }
 
-.demo-info-wrapper {
-    position: relative;
+.demo-info{
+    position:relative;
 
-    display: flex;
-    align-items: center;
+    width:22px;
+    height:22px;
+    z-index: 10001;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-    cursor: pointer;
-
-    color: var(--color);
-
-    transition: transform 0.3s ease;
+    flex-shrink:0;
 }
 
-.demo-info-wrapper:hover {
-    transform: scale(1.05);
+.demo-icon{
+    width:22px;
+    height:22px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    font-size:14px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    background:rgba(255,255,255,.12);
+
+    transition:.25s;
 }
 
-.demo-info-wrapper:hover .demo-popover {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(-50%) translateY(0);
+.demo-icon:hover{
+    transform:scale(1.08);
+    background:rgba(255,255,255,.2);
 }
 
-.demo-popover {
-    position: absolute;
+.demo-popover{
+    position:absolute;
+    top:34px;
+    right:0;
 
-    top: 40px;
-    left: 50%;
+    width:310px;
 
-    transform: translateX(-50%) translateY(8px);
+    padding:18px;
 
-    width: 320px;
+    border-radius:18px;
 
-    padding: 18px;
+    background:var(--background-color);
 
-    border-radius: 18px;
-
-    background: var(--background-color);
-
-    backdrop-filter: blur(14px);
+    backdrop-filter:blur(10px);
 
     box-shadow:
-        0 0 10px rgba(0, 0, 0, 0.25),
+        0 0 10px rgba(0,0,0,.25),
         inset 0 0 4px var(--theme-shadow);
 
-    color: var(--color);
+    color:var(--color);
 
-    opacity: 0;
-    visibility: hidden;
+    opacity:0;
+    visibility:hidden;
 
-    transition: all 0.25s ease;
+    transform:translateY(10px);
 
-    z-index: 500;
+    transition:.25s;
+
+    z-index:999;
 }
 
-.demo-popover::before {
-    content: "";
+.demo-popover::before{
+    content:"";
 
-    position: absolute;
+    position:absolute;
 
-    top: -8px;
-    left: 50%;
+    top:-7px;
+    right:10px;
 
-    transform: translateX(-50%) rotate(45deg);
+    width:14px;
+    height:14px;
 
-    width: 16px;
-    height: 16px;
+    transform:rotate(45deg);
 
-    background: var(--background-color);
+    background:var(--background-color);
 }
 
-.demo-popover h4 {
-    margin: 0 0 10px;
-    font-size: 18px;
+.demo-info:hover .demo-popover{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
 }
 
-.demo-popover p {
-    margin: 0 0 12px;
-    line-height: 1.5;
-    font-size: 0.92rem;
+.demo-popover h3{
+    margin:0 0 12px;
+    font-size:18px;
 }
 
-.demo-popover ul {
-    margin: 0;
-    padding-left: 18px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-
-    font-size: 0.88rem;
+.demo-popover p{
+    margin:0 0 12px;
+    font-size:14px;
+    line-height:1.5;
 }
 
-.demo-popover li {
-    line-height: 1.45;
+.demo-popover ul{
+    margin:0;
+    padding-left:18px;
 }
 
-@media screen and (max-width: 700px) {
-    .demo-popover {
-        width: 260px;
+.demo-popover li{
+    margin-bottom:8px;
+    font-size:14px;
+    line-height:1.5;
+}
 
-        left: auto;
-        right: -10px;
+@media (max-width:600px){
 
-        transform: translateY(8px);
+    .demo-mode{
+        font-size:13px;
+        padding:10px;
     }
 
-    .demo-info-wrapper:hover .demo-popover {
-        transform: translateY(0);
+    .demo-popover{
+        width:250px;
+        right:-8px;
     }
 
-    .demo-mode {
-        font-size: 0.9rem;
-        padding: 10px 14px;
-    }
 }

@@ -1,4 +1,3 @@
-import { Info } from "lucide-react";
 import "./Demo.css";
 
 export default function Demo() {
@@ -8,21 +7,21 @@ export default function Demo() {
                 🚧 DEMO MODE
             </span>
 
-            <div className="info-wrapper">
-                <Info size={18} />
+            <div className="demo-info">
+                <span className="demo-icon">ⓘ</span>
 
-                <div className="popover">
-                    <h4>Demo Mode</h4>
+                <div className="demo-popover">
+                    <h3>Demo Mode</h3>
 
                     <p>
-                        This portfolio uses a simplified demonstration environment.
+                        This portfolio runs in a simplified demo environment.
                     </p>
 
                     <ul>
-                        <li>Authentication is instant.</li>
-                        <li>A shared demo account is used.</li>
-                        <li>Backend runs on Render Free.</li>
-                        <li>The server may need a few seconds to wake up.</li>
+                        <li>Instant authentication.</li>
+                        <li>Shared demo account.</li>
+                        <li>Backend hosted on Render Free.</li>
+                        <li>Server may take 30–60 seconds to wake up.</li>
                         <li>Demo data may occasionally reset.</li>
                     </ul>
                 </div>
